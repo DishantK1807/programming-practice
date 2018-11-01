@@ -1,9 +1,16 @@
+/*
+Linear Search Program in C Programming Language
+
+The code is based on CS50 library, from Harvard CS50 Course, Introduction to Computer Science
+
+By: Dishant Khanna [dishant.khanna1807@gmail.com, dishant@dishantkhanna.me]
+*/
+
 #include<cs50.h>
 #include<stdio.h>
 
-
-void take_array(int *arr, int arr_size);
-int linear_search(int element, int *arr, int size);
+void take_array(int *arr, int arr_size);  //declaration for Get array input function
+int linear_search(int element, int *arr, int size);  //declaration for linear search function
 
 int main(void)
 {
@@ -21,12 +28,20 @@ int main(void)
 
 }
 
+/*
+Function to get array input
+Args: Array, Size of array
+*/
 void take_array (int *arr, int arr_size)
 {
     for (int i = 0; i < arr_size; i++)
        arr[i] = get_int();
 }
 
+/*
+Function to implement linear search
+Args: Element, Array, Size of array
+*/
 int linear_search (int element, int *arr, int size)
 {
     for (int i = 0; i < size; i++)
