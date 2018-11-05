@@ -1,0 +1,1 @@
+This Folder contains program for Binary Search algorithm in python programming language
